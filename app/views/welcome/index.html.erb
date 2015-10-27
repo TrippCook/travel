@@ -1,0 +1,28 @@
+<h1>Welcome to Tripp's travel site!</h1>
+<p>Talking smack about places I haven't been.</p>
+
+<p><%= @homeland %>
+
+<ul>
+	<% @countries.each do |country| %>
+		<%= country %>
+		<li><% country %></li>
+	<% end %>
+</ul>
+
+
+<% @country_images.each do |picture| %>
+	<p>
+	<%= image_tag picture, alt: "pics" picture %>
+	<% country %></li>
+	</p>
+<% end %>
+
+
+
+
+
+<%= image_tag "ssseiffel.jpg", alt: "blah", class: "country" %>
+<%= image_tag "arc.jpg", alt: "blah", class: "country" %>
+<%= image_tag "parisbridge.jpg", alt: "blah", class: "country" %>
+<%= image_tag "pei.jpg", alt: "blah", class: "country" %>
